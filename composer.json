@@ -6,7 +6,6 @@
         "log",
         "obfuscator"
     ],
-    "homepage": "https://www.yiiframework.com/",
     "license": "MIT",
     "require": {
         "ext-mbstring": "*",
