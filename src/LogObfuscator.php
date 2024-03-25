@@ -21,10 +21,10 @@ final class LogObfuscator
         '/("password":\s*")([^"]+)(")/ui' => '$1××××××××$3',
         // The regular expression is taken from https://regexland.com/base64/ and modified to accept
         // JSON-encoded base64 strings which are truncated
-        '#((\\\\?[a-z\d+\/]){4}){25,}((\\\\?[a-z\d+\/]){1,3})?={0,2}$#ui' => '< TRUNCATED BASE64 ENCODED VALUE >',
+        '#((\\\\?[a-z\d+\/]){4}){10,}((\\\\?[a-z\d+\/]){1,3})?={0,2}$#ui' => '< TRUNCATED BASE64 ENCODED VALUE >',
         // The regular expression is taken from https://regexland.com/base64/ and modified to accept
         // JSON-encoded base64 strings
-        '#((\\\\?[a-z\d+\/]){4}){25,}((\\\\?[a-z\d+\/]){3}=|(\\\\?[a-z\d+\/]){2}==)?#ui' => '< BASE64 ENCODED VALUE >',
+        '#((\\\\?[a-z\d+\/]){4}){10,}((\\\\?[a-z\d+\/]){3}=|(\\\\?[a-z\d+\/]){2}==)?#ui' => '< BASE64 ENCODED VALUE >',
     ];
 
     /**

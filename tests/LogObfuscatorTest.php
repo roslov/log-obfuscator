@@ -22,8 +22,7 @@ final class LogObfuscatorTest extends TestCase
      */
     public function testObfuscate(string $text, string $expected): void
     {
-        // TODO: Change to `100` and fix. When max length is 100, the tests fail
-        $obfuscator = new LogObfuscator(1000);
+        $obfuscator = new LogObfuscator(100);
         $this->assertEquals($expected, $obfuscator->obfuscate($text));
     }
 
