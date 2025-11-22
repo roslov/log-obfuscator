@@ -68,4 +68,4 @@ jobs:
         run: composer update --prefer-dist --no-interaction --no-progress --optimize-autoloader --ansi
 
       - name: Code style analysis
-        run: vendor/bin/phpcs --extensions=php --colors --standard=PSR12Ext --ignore=vendor/* -p -s .
+        run: vendor/bin/phpcs --extensions=php --colors --standard=PSR12Ext --runtime-set php_version 70400 --ignore=vendor/* -p -s .
