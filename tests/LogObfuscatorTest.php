@@ -33,6 +33,7 @@ final class LogObfuscatorTest extends TestCase
      */
     public function dataProvider(): array
     {
+        // phpcs:disable SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed.DisallowedPartiallyKeyed
         return [
             [
                 'simple text',
@@ -260,5 +261,6 @@ final class LogObfuscatorTest extends TestCase
                 '< BASE64 ENCODED VALUE >","other_data"',
             ],
         ];
+        // phpcs:enable SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed.DisallowedPartiallyKeyed
     }
 }

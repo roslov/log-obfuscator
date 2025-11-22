@@ -45,7 +45,7 @@ final class LogObfuscator
     private const MAX_LENGTH = 6000;
 
     /**
-     * @var int Maximum allowed length for obfuscated string
+     * @var int Maximum allowed length for an obfuscated string
      */
     private int $maxLength;
 
@@ -57,7 +57,7 @@ final class LogObfuscator
     /**
      * Constructor.
      *
-     * @param int $maxLength Maximum allowed length for obfuscated string
+     * @param int $maxLength Maximum allowed length for an obfuscated string
      * @param array<string, string> $additionalReplacements Additional patterns and replacements (pattern → replacement)
      */
     public function __construct(int $maxLength = self::MAX_LENGTH, array $additionalReplacements = [])
@@ -70,6 +70,7 @@ final class LogObfuscator
      * Obfuscates the text.
      *
      * @param string $text Original text
+     *
      * @return string Obfuscated text
      */
     public function obfuscate(string $text): string
@@ -88,6 +89,7 @@ final class LogObfuscator
      * Finalizes obfuscation of concatenation of the parts of the original text that was previously obfuscated
      *
      * @param string $text Concatenation of the parts of the original text that was previously obfuscated
+     *
      * @return string Groomed obfuscated text
      */
     private function finalizeObfuscation(string $text): string
