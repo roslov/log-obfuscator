@@ -1,6 +1,11 @@
 Log Obfuscator
 ==============
 
+[![Latest Stable Version](https://poser.pugx.org/roslov/log-obfuscator/v)](https://packagist.org/packages/roslov/log-obfuscator)
+[![Total Downloads](https://poser.pugx.org/roslov/log-obfuscator/downloads)](https://packagist.org/packages/roslov/log-obfuscator)
+[![License](https://poser.pugx.org/roslov/log-obfuscator/license)](https://packagist.org/packages/roslov/log-obfuscator)
+[![PHP Version Require](https://poser.pugx.org/roslov/log-obfuscator/require/php)](https://packagist.org/packages/roslov/log-obfuscator)
+
 This package hides sensitive information in text (usually, in logs).
 
 
